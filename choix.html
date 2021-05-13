@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="style.css" />
+	<script defer src="jquery/jquery.js"></script>
+
+    <title>Dora l'Exploratrice - Carnets de voyage</title>
+</head>
+
+<body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <img src="images/Dora_logo_licence.png" alt="Logo de Dora" id="logo" />
+                    <h2>Carnets de voyage</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                      	<li><a href="connexion.html" >S'inscrire</a></li>
+                        <li><a href="choix.html" class="active" >Où allez-vous</a></li>
+                    </ul>
+                </nav>
+            </header>
+				
+            <div class="container">
+			<form method="post" action= "traitement.php">
+			<div>
+				Choisir une destination à explorer avec moi : <br />
+				
+				<input type="Radio" name="Tsingy de Bemaraha" id="Tsingy de Bemaraha" />
+				<label for="Tsingy de Bemaraha">Tsingy de Bemaraha </label><br />
+				<input type="Radio" name="Nosy-be" id="Nosy-be" />
+				<label for="Nosy-be">Nosy-be</label><br />
+				<input type="Radio" name="Isalo" id="Isalo"/>
+				<label for="Isalo">Isalo</label><br />
+				<input type="Radio" name="Morondava" id="Morondava" /> 
+				<label for="Morondava">Morondava</label> <br />
+				<input type="Radio" name="Ifaty" id="Ifaty" /> 
+				<label for="Ifaty">Ifaty</label>
+			</div><br />
+
+				<div class="form-group">
+		        <label>DATE DE DEPART: </label><input type="date" name="autrechamp" id="aautrechamp" class="form-control w-50">
+		        </div><br />
+				<div>
+				<div class="form-group">
+		        <label>SEJOUR: </label><input type="number" name="autrechamp" id="autrechamp" class="form-control w-50">
+		    	 </div><br />
+				
+				<div class="form-group">
+		        <label>NOMBRE DE PERSONNES: </label><input type="number" min="1" max="10" name="autrechamp" id="autrechamp" class="form-control w-50">
+		    	 </div><br />
+				<input type="submit" value="Reserver" name="insert"  class="btn btn-primary"> 
+				</div>
+				</form>
+				</form>
+            </div>
+        </div>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./bootstrap.js"></script> 
+</body>
+</html>
+    
